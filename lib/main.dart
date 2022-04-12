@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fruitshop/screens/home_page.dart';
 
 void main() => runApp(const MyApp());
 
@@ -10,9 +11,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Fruit Shop',
       debugShowCheckedModeBanner: false,
-      home: Container(
-        color: Colors.purple,
+      theme: ThemeData(
+        primaryColor: const Color.fromARGB(255, 4, 125, 141),
+        primarySwatch: Colors.blue,
       ),
+      home: HomePage(),
     );
   }
 }
